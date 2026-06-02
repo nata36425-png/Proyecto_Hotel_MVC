@@ -36,7 +36,5 @@ public class Hotel {
 
     public void setUbicacion(String Ubicacion) {
         this.Ubicacion = Ubicacion;
-    }
-    
-    
+    }     
 }

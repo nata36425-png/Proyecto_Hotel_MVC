@@ -81,77 +81,73 @@ public class Controlador_Habitaciones {
 
                 return false;
         }
-
         // ESTADO
         habitacion.setDisponible(disponible);
-
         // AGREGAR
         listaHabitaciones.add(habitacion);
-
         return true;
     }
-
+    /*
+    * Nombre del método: actualizarHabitacion 
+    * Parámetros recibidos: numero, nuevoPrecio, nuevoEstado
+    * Tipo de retorno: boolean
+    * Descripción: actualizar un cliente
+    */
     public boolean actualizarHabitacion(int numero, double nuevoPrecio, boolean nuevoEstado) {
 
         Habitacion habitacion = consultarHabitacion(numero);
-
         // VALIDAR EXISTENCIA
         if (habitacion == null) {
-
             return false;
         }
-
         // VALIDAR PRECIO
         if (nuevoPrecio <= 0) {
-
             return false;
         }
-
         // ACTUALIZAR
         habitacion.setPrecioPorNoche(nuevoPrecio);
-
         habitacion.setDisponible(nuevoEstado);
 
         return true;
     }
-    // ==================================================
-    // ACTUALIZAR SOLO ESTADO
-    // ==================================================
-
+    /*
+    * Nombre del método: actualizarEstadoHabitacion
+    * Parámetros recibidos: numero, disponible
+    * Tipo de retorno: boolean
+    * Descripción: actualizar el estado de la habitacion 
+    */
     public boolean actualizarEstadoHabitacion(int numero, boolean disponible) {
 
         Habitacion habitacion = consultarHabitacion(numero);
 
         if (habitacion == null) {
-
             return false;
         }
-
         habitacion.setDisponible(disponible);
-
         return true;
     }
-    // ==================================================
-    // 1.3 ELIMINAR HABITACIÓN
-    // ==================================================
-
+    /*
+    * Nombre del método: eliminarHabitacion
+    * Parámetros recibidos: numero
+    * Tipo de retorno: boolean
+    * Descripción: Eliminar una habitacion 
+    */
     public boolean eliminarHabitacion(int numero) {
 
         Habitacion habitacion = consultarHabitacion(numero);
 
         if (habitacion == null) {
-
             return false;
         }
-
         listaHabitaciones.remove(habitacion);
-
         return true;
     }
-    // ==================================================
-    // 1.4 CONSULTAR HABITACIÓN
-    // ==================================================
-
+    /*
+    * Nombre del método: consultarHabitacion
+    * Parámetros recibidos: numero
+    * Tipo de retorno: Habitacion
+    * Descripción: Consultar habitacion
+    */
     public Habitacion consultarHabitacion(int numero) {
 
         for (Habitacion h : listaHabitaciones) {
@@ -164,10 +160,12 @@ public class Controlador_Habitaciones {
 
         return null;
     }
-    // ==================================================
-    // CONSULTAR DISPONIBILIDAD
-    // ==================================================
-
+   /*
+    * Nombre del método: consultarDisponibilidad
+    * Parámetros recibidos: numero
+    * Tipo de retorno: boolean
+    * Descripción: Consultar la disponibilidad de una habitacion
+    */
     public boolean consultarDisponibilidad(int numero) {
 
         Habitacion habitacion = consultarHabitacion(numero);
@@ -179,18 +177,22 @@ public class Controlador_Habitaciones {
 
         return habitacion.isDisponible();
     }
-    // ==================================================
-    // OBTENER TODAS LAS HABITACIONES
-    // ==================================================
-
+    /*
+    * Nombre del método: obtenerHabitaciones
+    * Parámetros recibidos: ArrayList
+    * Tipo de retorno: ArrayList habitaciones
+    * Descripción: Obtener habitaciones
+    */
     public ArrayList<Habitacion> obtenerHabitaciones() {
 
         return listaHabitaciones;
     }
-
-    // ==================================================
-    // OBTENER DISPONIBLES
-    // ==================================================
+    /*
+    * Nombre del método: ontenerHabitacionesDisponibles
+    * Parámetros recibidos: ArrayList
+    * Tipo de retorno: disponibles
+    * Descripción: Obtener las habitaciones disponibles
+    */
     public ArrayList<Habitacion> obtenerHabitacionesDisponibles() {
 
         ArrayList<Habitacion> disponibles = new ArrayList<>();
@@ -198,17 +200,17 @@ public class Controlador_Habitaciones {
         for (Habitacion h : listaHabitaciones) {
 
             if (h.isDisponible()) {
-
                 disponibles.add(h);
             }
         }
-
         return disponibles;
     }
-
-    // ==================================================
-    // OBTENER OCUPADAS
-    // ==================================================
+    /*
+    * Nombre del método: obtenerHabitacionesOcupadas
+    * Parámetros recibidos: ArrayList
+    * Tipo de retorno: ocupadas
+    * Descripción: Obtener las habitaciones ocupadas
+    */
     public ArrayList<Habitacion> obtenerHabitacionesOcupadas() {
 
         ArrayList<Habitacion> ocupadas = new ArrayList<>();
@@ -216,11 +218,9 @@ public class Controlador_Habitaciones {
         for (Habitacion h : listaHabitaciones) {
 
             if (!h.isDisponible()) {
-
                 ocupadas.add(h);
             }
         }
-
         return ocupadas;
     }
 }

@@ -64,6 +64,4 @@ public class Huesped extends Persona{
     public void setNumero_habitacion(int Numero_habitacion) {
         this.Numero_habitacion = Numero_habitacion;
     }
-
-
 }

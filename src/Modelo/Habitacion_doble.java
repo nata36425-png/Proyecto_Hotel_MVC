@@ -27,6 +27,5 @@ public class Habitacion_doble extends Habitacion{
     public String mostrarInformacion() {
         return "Habitación Doble\n" +
                super.mostrarInformacion();
-    }
-   
+    }  
 }

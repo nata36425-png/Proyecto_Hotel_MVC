@@ -67,4 +67,5 @@ public class Habitacion {
                "\nPrecio: " + this.precioPorNoche +
                "\nDisponible: " + this.Disponible;
     }
+   
 }

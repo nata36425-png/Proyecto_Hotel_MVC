@@ -26,18 +26,21 @@ public class Controlador_Hotel {
    public Controlador_Hotel() {
        
    }
-
-    
-    // ==================================
-    // TOTAL HABITACIONES
-    // ==================================
+   /*
+    * Nombre del método: totalHabitaciones
+    * Parámetros recibidos: no recibe
+    * Tipo de retorno: int
+    * Descripción: Obtener el total de las habitaciones
+    */
     public int totalHabitaciones() {
-
         return controladorHabitacion.obtenerHabitaciones().size();
     }
-    // ==================================
-    // DISPONIBLES
-    // ==================================
+    /*
+    * Nombre del método: habitacionesDisponibles
+    * Parámetros recibidos: no recibe
+    * Tipo de retorno: contador
+    * Descripción: mostrar las habitaciones disponibles
+    */
     public int habitacionesDisponibles() {
 
         int contador = 0;
@@ -49,31 +52,37 @@ public class Controlador_Hotel {
                 contador++;
             }
         }
-
         return contador;
     }
-    // ==================================
-    // OCUPADAS
-    // ==================================
+    /*
+    * Nombre del método: habitacionesOcupadas
+    * Parámetros recibidos: no recibe
+    * Tipo de retorno: double habitacionesOcupadas
+    * Descripción: Mostrar las habitaciones ocupadas
+    */
     public int habitacionesOcupadas() {
-
         return totalHabitaciones() - habitacionesDisponibles();
     }
-    // ==================================
-    // PORCENTAJE OCUPACIÓN
-    // ==================================
+    /*
+    * Nombre del método: porcentajeOcupacion
+    * Parámetros recibidos: total habitaciones
+    * Tipo de retorno: porcentaje de ocupacion 
+    * Descripción: Muestra el procentaje de ocupacion del hotel
+    */
     public double porcentajeOcupacion() {
 
         if(totalHabitaciones() == 0) {
-
             return 0;
         }
-
         return (double) habitacionesOcupadas() * 100 / totalHabitaciones();
     }
-    // ==================================
-    // INFORMACIÓN DEL HOTEL
-    // ==================================
+    /*
+    * Nombre del método: informacionHotel
+    * Parámetros recibidos: no recibe
+    * Tipo de retorno: nombre, ubicacion, total habitaciones, habitaciones ocupadas,
+    disponibles y %ocupacion  
+    * Descripción: Muestra toda la informacion de ocupacion del hotel
+    */
     public String informacionHotel() {
 
         return "Hotel: " + hotel.getNombre()

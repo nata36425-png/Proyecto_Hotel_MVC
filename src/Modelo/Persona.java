@@ -56,7 +56,5 @@ public class Persona {
     
     public String MostrarInfo() {
         return "Documento: " + this.Documento + " | " + this.Nombre + this.Apellido;
-    }
-          
-    
+    }   
 }
