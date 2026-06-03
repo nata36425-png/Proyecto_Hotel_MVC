@@ -84,7 +84,7 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="lblNombreHuesped" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="lblDocumetoHuesped" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -96,29 +96,23 @@
                                   <Component id="lblTelefonoHuesped" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="lblNumeroHabitacionHuesped" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="txtTelefonoHuesped" alignment="0" min="-2" pref="193" max="-2" attributes="0"/>
+                              <Component id="txtDocumentoHuesped" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                              <Component id="txtApellidosHuesped" alignment="0" pref="373" max="32767" attributes="0"/>
+                              <Component id="txtNombreHuesped" alignment="0" min="-2" pref="290" max="-2" attributes="0"/>
+                              <Component id="txtCorreoHuesped" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="txtTelefonoHuesped" alignment="0" min="-2" pref="193" max="-2" attributes="0"/>
-                                      <Component id="txtDocumentoHuesped" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
-                                      <Component id="txtApellidosHuesped" alignment="0" pref="373" max="32767" attributes="0"/>
-                                      <Component id="txtNombreHuesped" alignment="0" min="-2" pref="290" max="-2" attributes="0"/>
-                                      <Component id="txtCorreoHuesped" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btnEliminarHuesped" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
-                                      <Component id="btnActualizarHuesped" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                          <Component id="btnBuscarHuesped" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="btnRegistrarHuesped" alignment="0" max="32767" attributes="0"/>
-                                      </Group>
-                                  </Group>
+                              <Component id="btnEliminarHuesped" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
+                              <Component id="btnActualizarHuesped" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="btnBuscarHuesped" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnRegistrarHuesped" alignment="0" max="32767" attributes="0"/>
                               </Group>
-                              <Component id="txtNumeroHabitacionHuesped" min="-2" pref="109" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="368" max="32767" attributes="0"/>
                       </Group>
@@ -167,12 +161,7 @@
                               <Component id="txtTelefonoHuesped" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="lblTelefonoHuesped" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblNumeroHabitacionHuesped" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtNumeroHabitacionHuesped" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="120" max="32767" attributes="0"/>
+                          <EmptySpace pref="169" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -253,13 +242,6 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarHuespedActionPerformed"/>
                   </Events>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblNumeroHabitacionHuesped">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Numero habitacion"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtNumeroHabitacionHuesped">
                 </Component>
               </SubComponents>
             </Container>
@@ -541,10 +523,10 @@
                                           <Component id="cbxNumeroDeHabitaciones" min="-2" pref="74" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
                                               <Group type="102" attributes="0">
                                                   <Component id="lblDocumentoReserva" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                                                   <Component id="txtDocumentoReserva" min="-2" pref="248" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
@@ -843,7 +825,7 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblDocumentoReserva">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Documento reserva"/>
+                    <Property name="text" type="java.lang.String" value="Documento "/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtDocumentoReserva">

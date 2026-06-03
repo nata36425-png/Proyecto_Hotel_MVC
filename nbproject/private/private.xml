@@ -4,10 +4,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Controlador/Controlador_Habitaciones.java</file>
-            <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Modelo/Empleado.java</file>
-            <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Modelo/Persona.java</file>
             <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Controlador/Controlador_Reservas.java</file>
+            <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Modelo/Habitacion_suit.java</file>
+            <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Modelo/Empleado.java</file>
+            <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Controlador/Controlador_Huesped.java</file>
+            <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Modelo/Persona.java</file>
             <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Modelo/Habitacion_simple.java</file>
+            <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Modelo/Hotel.java</file>
             <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Modelo/Huesped.java</file>
             <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Vista/frmPrincipal.java</file>
             <file>file:/C:/Users/natam/OneDrive/Documentos/NetBeansProjects/Proyecto_Hotel_MVC/src/Modelo/Habitacion.java</file>

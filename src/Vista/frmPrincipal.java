@@ -67,8 +67,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnActualizarHuesped = new javax.swing.JButton();
         btnEliminarHuesped = new javax.swing.JButton();
         btnBuscarHuesped = new javax.swing.JButton();
-        lblNumeroHabitacionHuesped = new javax.swing.JLabel();
-        txtNumeroHabitacionHuesped = new javax.swing.JTextField();
         panel2 = new java.awt.Panel();
         lblNumeroDeHabitacion = new javax.swing.JLabel();
         txtNumeroDeHabitacion = new javax.swing.JTextField();
@@ -187,14 +185,12 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        lblNumeroHabitacionHuesped.setText("Numero habitacion");
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addGap(76, 76, 76)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblNombreHuesped)
                     .addComponent(lblDocumetoHuesped)
@@ -203,25 +199,21 @@ public class frmPrincipal extends javax.swing.JFrame {
                         .addComponent(lblApellidosHuesped))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(lblTelefonoHuesped)
-                        .addGap(4, 4, 4))
-                    .addComponent(lblNumeroHabitacionHuesped))
+                        .addGap(4, 4, 4)))
                 .addGap(31, 31, 31)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtTelefonoHuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtDocumentoHuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtApellidosHuesped, javax.swing.GroupLayout.DEFAULT_SIZE, 373, Short.MAX_VALUE)
+                    .addComponent(txtNombreHuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCorreoHuesped))
+                .addGap(107, 107, 107)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtTelefonoHuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDocumentoHuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtApellidosHuesped, javax.swing.GroupLayout.DEFAULT_SIZE, 373, Short.MAX_VALUE)
-                            .addComponent(txtNombreHuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCorreoHuesped))
-                        .addGap(107, 107, 107)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnEliminarHuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnActualizarHuesped)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(btnBuscarHuesped, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnRegistrarHuesped, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addComponent(txtNumeroHabitacionHuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnEliminarHuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnActualizarHuesped)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(btnBuscarHuesped, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnRegistrarHuesped, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(368, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -258,11 +250,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtTelefonoHuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTelefonoHuesped))
-                .addGap(27, 27, 27)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNumeroHabitacionHuesped)
-                    .addComponent(txtNumeroHabitacionHuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(120, Short.MAX_VALUE))
+                .addContainerGap(169, Short.MAX_VALUE))
         );
 
         tblRegistroClientes.addTab("Registro de huespedes", jPanel2);
@@ -488,7 +476,7 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        lblDocumentoReserva.setText("Documento reserva");
+        lblDocumentoReserva.setText("Documento ");
 
         lblAnioIngreso.setText("Año");
 
@@ -543,10 +531,10 @@ public class frmPrincipal extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cbxNumeroDeHabitaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(ReservasLayout.createSequentialGroup()
-                                .addGroup(ReservasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(ReservasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(ReservasLayout.createSequentialGroup()
                                         .addComponent(lblDocumentoReserva)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGap(41, 41, 41)
                                         .addComponent(txtDocumentoReserva, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, ReservasLayout.createSequentialGroup()
                                         .addGap(266, 266, 266)
@@ -953,7 +941,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel lblNombreHuesped;
     private javax.swing.JLabel lblNumeroDeHabitacion;
     private javax.swing.JLabel lblNumeroDeHabitacionReserva;
-    private javax.swing.JLabel lblNumeroHabitacionHuesped;
     private javax.swing.JLabel lblNumeroPersonas;
     private javax.swing.JLabel lblPorcentajeOcupacion;
     private javax.swing.JLabel lblPrecioPorNoche;
@@ -974,7 +961,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JTextField txtHabitacionesOcupadas;
     private javax.swing.JTextField txtNombreHuesped;
     private javax.swing.JTextField txtNumeroDeHabitacion;
-    private javax.swing.JTextField txtNumeroHabitacionHuesped;
     private javax.swing.JTextField txtPorcentajeOcupacion;
     private javax.swing.JTextField txtPrecioPorNoche;
     private javax.swing.JTextField txtTelefonoHuesped;
@@ -1030,23 +1016,14 @@ public class frmPrincipal extends javax.swing.JFrame {
                 || nombre.isEmpty()
                 || apellido.isEmpty()
                 || correo.isEmpty()
-                || telefono.isEmpty()
-                || txtNumeroHabitacionHuesped.getText().isEmpty()) {
+                || telefono.isEmpty()) {
             JOptionPane.showMessageDialog(this, "Debe completar todos los campos");
 
             return;
         }
-        int numeroHabitacion;
+        
 
-        try {
-            numeroHabitacion = Integer.parseInt(txtNumeroHabitacionHuesped.getText());
-
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "El número de habitación debe ser numérico");
-            return;
-        }
-
-        Huesped nuevoHuesped = new Huesped(telefono, correo, numeroHabitacion, nombre, apellido, documento);
+        Huesped nuevoHuesped = new Huesped(telefono, correo, nombre, apellido, documento);
         boolean registrado = controladorHuesped.registrarHuesped(nuevoHuesped);
 
         if (registrado) {
@@ -1076,7 +1053,6 @@ public class frmPrincipal extends javax.swing.JFrame {
             txtApellidosHuesped.setText(h.getApellido());
             txtCorreoHuesped.setText(h.getCorreo());
             txtTelefonoHuesped.setText(h.getNumero_telefono());
-            txtNumeroHabitacionHuesped.setText(String.valueOf(h.getNumero_habitacion()));
         } else {
             JOptionPane.showMessageDialog(this, "Huésped no encontrado");
         }
@@ -1089,11 +1065,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         String apellido = txtApellidosHuesped.getText();
         String correo = txtCorreoHuesped.getText();
         String telefono = txtTelefonoHuesped.getText();
-
-        if (txtNumeroHabitacionHuesped.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Ingrese el número de habitación");
-            return;
-        }
 
         boolean actualizado = controladorHuesped.actualizarHuesped(documento, nombre, apellido, telefono, correo);
 
@@ -1131,7 +1102,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         txtApellidosHuesped.setText("");
         txtCorreoHuesped.setText("");
         txtTelefonoHuesped.setText("");
-        txtNumeroHabitacionHuesped.setText("");
     }
 
     private void registrarHabitacion() {

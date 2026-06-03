@@ -153,7 +153,6 @@ public class Controlador_Habitaciones {
         for (Habitacion h : listaHabitaciones) {
 
             if (h.getNumero() == numero) {
-
                 return h;
             }
         }

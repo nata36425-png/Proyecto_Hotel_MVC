@@ -15,22 +15,20 @@ public class Huesped extends Persona{
     
     private String Numero_telefono;
     private String Correo;
-    private int Numero_habitacion;
-
+   
     public Huesped() {
     }
 
-    public Huesped(String Numero_telefono, String Correo, int Numero_habitacion) {
+    public Huesped(String Numero_telefono, String Correo) {
         this.Numero_telefono = Numero_telefono;
         this.Correo = Correo;
-        this.Numero_habitacion = Numero_habitacion;
+        
     }
 
-    public Huesped(String Numero_telefono, String Correo, int Numero_habitacion, String Nombre, String Apellido, String Documento) {
+    public Huesped(String Numero_telefono, String Correo, String Nombre, String Apellido, String Documento) {
         super(Nombre, Apellido, Documento);
         this.Numero_telefono = Numero_telefono;
         this.Correo = Correo;
-        this.Numero_habitacion = Numero_habitacion;
     }
 
    
@@ -55,13 +53,5 @@ public class Huesped extends Persona{
 
     public void setCorreo(String Correo) {
         this.Correo = Correo;
-    }
-
-    public int getNumero_habitacion() {
-        return Numero_habitacion;
-    }
-
-    public void setNumero_habitacion(int Numero_habitacion) {
-        this.Numero_habitacion = Numero_habitacion;
     }
 }
