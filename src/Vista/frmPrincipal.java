@@ -122,6 +122,12 @@ public class frmPrincipal extends javax.swing.JFrame {
         lblPorcentajeOcupacion = new javax.swing.JLabel();
         txtPorcentajeOcupacion = new javax.swing.JTextField();
         btnMostrarInformacion = new javax.swing.JButton();
+        panel3 = new java.awt.Panel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txpContextoRapido = new javax.swing.JTextPane();
+        lblContextoManual = new javax.swing.JLabel();
+        lblManualUsuario = new javax.swing.JLabel();
+        bntManual = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -707,6 +713,56 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         tblRegistroClientes.addTab("Gestion hotelera", panel1);
 
+        txpContextoRapido.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        txpContextoRapido.setText("Esta es una aplicacion de escritorio que permite gestionar las habitacion, huespedes, reservas del establecimiento y controlar el estado de ocupacion del hotel.");
+        jScrollPane2.setViewportView(txpContextoRapido);
+
+        lblContextoManual.setText("Contexto rapido");
+
+        lblManualUsuario.setText("Manual de usurio");
+
+        bntManual.setText("Manual");
+        bntManual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntManualActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel3Layout = new javax.swing.GroupLayout(panel3);
+        panel3.setLayout(panel3Layout);
+        panel3Layout.setHorizontalGroup(
+            panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel3Layout.createSequentialGroup()
+                .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel3Layout.createSequentialGroup()
+                        .addGap(160, 160, 160)
+                        .addComponent(lblContextoManual))
+                    .addGroup(panel3Layout.createSequentialGroup()
+                        .addGap(169, 169, 169)
+                        .addComponent(lblManualUsuario))
+                    .addGroup(panel3Layout.createSequentialGroup()
+                        .addGap(137, 137, 137)
+                        .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(bntManual, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(340, Short.MAX_VALUE))
+        );
+        panel3Layout.setVerticalGroup(
+            panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel3Layout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(lblContextoManual)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(lblManualUsuario)
+                .addGap(31, 31, 31)
+                .addComponent(bntManual, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(173, Short.MAX_VALUE))
+        );
+
+        tblRegistroClientes.addTab("Manual", panel3);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -856,6 +912,24 @@ public class frmPrincipal extends javax.swing.JFrame {
         mostrarInformacionHotelera();
     }//GEN-LAST:event_btnMostrarInformacionActionPerformed
 
+    private void bntManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntManualActionPerformed
+        // TODO add your handling code here:
+        
+        String manual =
+        "MANUAL DE USUARIO - Hotel CAPRI\n\n" +
+        "1. HUÉSPEDES: Se necesita registrar al huesped para asi tener sus datos en el sistema y empezar con la reserva. En esta primer pestaña se puede registrar, buscar, actualizar y eliminar huéspedes.\n\n" +
+        "2.HABITACIONES: Para seguir necesitamos registrar la habitacion para asi poder hacer la reserva mas adelante. En esta sedunda pestaña se puede registrar habitaciones con número, precio, tipo\n" +
+        "y disponibilidad. Puede buscar, actualizar y eliminar.\n\n" +
+        "3. RESERVAS: Este es el paso mas importante ya que es esencial crear correctamente las reservas y que todos los pasos tengan sentido. En esta tercera pestaña se puede crear reservas asociando un huésped con una habitación\n" +
+        "y fechas. Puede calcular costo, ver comprobante y cancelar.\n\n" +
+        "4. GESTIÓN HOTELERA: En este ultimo paso podemos ver las estadisticas del hotel y poder ver de una forma mas facil la ocupacion actual del holet. En esta ultima pestaña se puede hacer clic en Mostrar Información para ver\n" +
+        "estadísticas de ocupación del hotel en tiempo real.";
+
+    JOptionPane.showMessageDialog(this, manual, 
+        "Manual de Usuario", JOptionPane.INFORMATION_MESSAGE);
+    
+    }//GEN-LAST:event_bntManualActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -893,6 +967,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Reservas;
+    private javax.swing.JButton bntManual;
     private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnActualizarHuesped;
     private javax.swing.JButton btnBuscar;
@@ -921,9 +996,11 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbxNumeroPersonas;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblAnioIngreso;
     private javax.swing.JLabel lblAnioSalida;
     private javax.swing.JLabel lblApellidosHuesped;
+    private javax.swing.JLabel lblContextoManual;
     private javax.swing.JLabel lblCorreoHuesped;
     private javax.swing.JLabel lblCostoTotal;
     private javax.swing.JLabel lblDiaIngreso;
@@ -936,6 +1013,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel lblHabitacionesDisponibles;
     private javax.swing.JLabel lblHabitacionesOcupadas;
     private javax.swing.JLabel lblHotel;
+    private javax.swing.JLabel lblManualUsuario;
     private javax.swing.JLabel lblMesIngreso;
     private javax.swing.JLabel lblMesSalida;
     private javax.swing.JLabel lblNombreHuesped;
@@ -949,10 +1027,12 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel lblTotalHabitaciones;
     private java.awt.Panel panel1;
     private java.awt.Panel panel2;
+    private java.awt.Panel panel3;
     private javax.swing.JRadioButton rdbHabitacionDoble;
     private javax.swing.JRadioButton rdbHabitacionSimple;
     private javax.swing.JRadioButton rdbHabitacionSuit;
     private javax.swing.JTabbedPane tblRegistroClientes;
+    private javax.swing.JTextPane txpContextoRapido;
     private javax.swing.JTextField txtApellidosHuesped;
     private javax.swing.JTextField txtCorreoHuesped;
     private javax.swing.JTextField txtDocumentoHuesped;
@@ -1021,7 +1101,6 @@ public class frmPrincipal extends javax.swing.JFrame {
 
             return;
         }
-        
 
         Huesped nuevoHuesped = new Huesped(telefono, correo, nombre, apellido, documento);
         boolean registrado = controladorHuesped.registrarHuesped(nuevoHuesped);
